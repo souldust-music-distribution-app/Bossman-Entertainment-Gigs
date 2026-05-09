@@ -23,25 +23,26 @@
         overflow-x: hidden;
       }
 
+      /* Scaled up the logo container */
       .bossman-logo {
         background: #eab308;
         color: #000;
-        width: 45px;
-        height: 45px;
+        width: 60px; 
+        height: 60px;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         font-weight: 900;
-        font-size: 1.2rem;
-        box-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
+        font-size: 1.8rem;
+        box-shadow: 0 0 20px rgba(234, 179, 8, 0.5);
         animation: pulse-glow 2s infinite;
       }
 
       @keyframes pulse-glow {
-        0% { box-shadow: 0 0 5px rgba(234, 179, 8, 0.4); transform: scale(1); }
-        50% { box-shadow: 0 0 20px rgba(234, 179, 8, 0.8); transform: scale(1.05); }
-        100% { box-shadow: 0 0 5px rgba(234, 179, 8, 0.4); transform: scale(1); }
+        0% { box-shadow: 0 0 10px rgba(234, 179, 8, 0.4); transform: scale(1); }
+        50% { box-shadow: 0 0 30px rgba(234, 179, 8, 0.8); transform: scale(1.05); }
+        100% { box-shadow: 0 0 10px rgba(234, 179, 8, 0.4); transform: scale(1); }
       }
 
       ::-webkit-scrollbar { width: 5px; }
@@ -51,20 +52,20 @@
   </head>
   <body>
 
-    <nav class="fixed top-0 w-full z-50 backdrop-blur-xl border-b border-white/5 p-4 flex justify-between items-center px-6">
-      <div class="flex items-center gap-3">
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-2xl border-b border-white/10 p-5 flex justify-between items-center px-8">
+      <div class="flex items-center gap-4">
         <div class="bossman-logo">B</div>
         <div class="flex flex-col text-left">
-          <span class="font-black text-lg tracking-tighter uppercase leading-none">BOSSMAN</span>
-          <span class="text-[9px] font-bold text-yellow-500 tracking-[0.3em] uppercase">Entertainment</span>
+          <span class="font-black text-2xl tracking-tighter uppercase leading-none">BOSSMAN</span>
+          <span class="text-[11px] font-bold text-yellow-500 tracking-[0.4em] uppercase">Entertainment</span>
         </div>
       </div>
-      <a href="https://wa.me/27843247522" class="bg-yellow-500 text-black px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-tighter hover:bg-white transition-all">
+      <a href="https://wa.me/27843247522" class="bg-yellow-500 text-black px-8 py-3 rounded-full text-xs font-black uppercase tracking-widest hover:bg-white transition-all shadow-lg shadow-yellow-500/20">
         Book Now
       </a>
     </nav>
 
-    <header class="pt-40 pb-20 px-6 text-center relative">
+    <header class="pt-48 pb-20 px-6 text-center relative">
       <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-yellow-600/5 blur-[120px] -z-10"></div>
       <h1 class="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-4">
         VICO GREEN <br/> <span class="text-yellow-500 italic">& MCLIGHT</span>
@@ -140,7 +141,7 @@
     </section>
 
     <footer class="py-10 text-center border-t border-white/5">
-      <p class="text-[9px] text-gray-700 font-bold uppercase tracking-[0.5em]">Built by Niipseedadust • Family First</p>
+      <p class="text-[9px] text-gray-700 font-bold uppercase tracking-[0.5em]">Built by Soul Dust Rec • Bossman Entertainment</p>
     </footer>
 
   </body>
